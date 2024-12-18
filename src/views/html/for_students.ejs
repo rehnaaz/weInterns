@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/a13b999530.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/static/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/static/css/nev_bar_style.css" />
+  <link rel="stylesheet" href="/static/css/mainvishal.css" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/static/images/logo_main.png" />
+  <title>Home</title>
+</head>
+
+<body>
+
+  <%- include('header.html') %>
+
+    <div id="internships" class="container-fluid section">
+      <div class="max-width-container">
+        <h2>Internships</h2>
+        <p class="section_description">
+          Apply to 10,000+ internships for free
+          <a class="view_all_cta" href="internships.ejs">
+            View all internships <i class="ic-24-arrow-right"></i>
+          </a>
+        </p>
+
+        <!-- First Main Div    -->
+        <div class="categories_container container my-5">
+          <h2 class="text-center mb-4">Certification Courses for You</h2>
+
+          <!-- Inside the 8 div    -->
+          <div class="grid">
+            <!-- Card 1 -->
+            <div class="card">
+              <img src="/static/images/java.png.webp" alt="Core Java">
+              <div class="card-content">
+                <div class="card-title">Core Java</div>
+                <div class="card-text">8 weeks • ⭐ 4.3 • 27,728 learners</div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+              <img src="/static/images/web-development.png.webp" alt="Web Development">
+              <div class="card-content">
+                <div class="card-title">Web Development</div>
+                <div class="card-text">8 weeks • ⭐ 4.1</div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+              <img src="/static/images/android.png.webp" alt="Android App">
+              <div class="card-content">
+                <div class="card-title">Android App Development</div>
+                <div class="card-text">8 weeks • ⭐ 4.1 • 38,450 learners</div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+              <img src="/static/images/machine-learning.png.webp" alt="Machine Learning">
+              <div class="card-content">
+                <div class="card-title">Machine Learning</div>
+                <div class="card-text">8 weeks • ⭐ 4.5 • 36,266 learners</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Main Div -->
+        <div class="categories_container container my-5">
+          <h2 class="text-center mb-4">Certification Courses for You</h2>
+          <div class="grid">
+            <!-- Card 1 -->
+            <div class="card">
+              <img src="/static/images/" alt="Placement Guarantee">
+              <div class="card-content">
+                <div class="card-title">Placement Guarantee Courses</div>
+                <div class="card-text">Full refund if not hired, confirmed salary up to 5 LPA.</div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+              <img src="https://via.placeholder.com/300x150" alt="Gaming Mapping">
+              <div class="card-content">
+                <div class="card-title">Gaming Mapping Internship</div>
+                <div class="card-text">Work From Home • ₹8,000/month • 6 Months</div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+              <img src="https://via.placeholder.com/300x150" alt="Flutter Engineer">
+              <div class="card-content">
+                <div class="card-title">Software Engineer (Flutter)</div>
+                <div class="card-text">₹20,00,000 - 50,00,000/year • Work From Home</div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+              <img src="https://via.placeholder.com/300x150" alt=".NET Developer">
+              <div class="card-content">
+                <div class="card-title">Senior .NET Developer</div>
+                <div class="card-text">₹9,00,000 - 10,00,000/year • Work From Home</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="trainings" class="container-fluid section">
+        <div class="max-width-container">
+          <h4>Internshala Trainings</h4>
+          <p class="section_description">
+            Learn new-age skills on the go
+            <a class="view_all_cta" target="_blank" rel="noopener" href="internships.ejs">
+              View all trainings<i class="ic-24-arrow-right"></i>
+            </a>
+          </p>
+
+          <div id="trainings_container" class="scrollable_cards">
+            <a href="internships.ejs" class="card_item" target="_blank" rel="noopener">
+              <div class="img">
+                <img src="https://internshala.com/static/images/home/trainings/icons/programming_with_python.svg"
+                  alt="" />
+              </div>
+              <div class="text">Programming with Python</div>
+            </a>
+            <a href="internships.ejs" class="card_item" target="_blank" rel="noopener">
+              <div class="img">
+                <img src="https://internshala.com/static/images/home/trainings/icons/digital_marketing.svg" alt="" />
+              </div>
+              <div class="text">Digital Marketing</div>
+            </a>
+            <a href="internships.ejs" class="card_item" target="_blank" rel="noopener">
+              <div class="img">
+                <img src="https://internshala.com/static/images/home/trainings/icons/web_development.svg" alt="" />
+              </div>
+              <div class="text">Web Development</div>
+            </a>
+            <a href="internships.ejs" class="card_item" target="_blank" rel="noopener">
+              <div class="img">
+                <img src="https://internshala.com/static/images/home/trainings/icons/machine_learning.svg" alt="" />
+              </div>
+              <div class="text">Machine Learning</div>
+            </a>
+            <a href="internships.ejs" class="card_item" target="_blank" rel="noopener">
+              <div class="img">
+                <img src="https://internshala.com/static/images/home/trainings/icons/advanced_excel.svg" alt="" />
+              </div>
+              <div class="text">Advanced Excel</div>
+            </a>
+            <a href="internships.ejs" class="card_item" target="_blank" rel="noopener">
+              <div class="img">
+                <img src="https://internshala.com/static/images/home/trainings/icons/ethical_hacking.svg" alt="" />
+              </div>
+              <div class="text">Ethical Hacking</div>
+            </a>
+            <a href="internships.ejs" class="card_item" target="_blank" rel="noopener">
+              <div class="img">
+                <img src="https://internshala.com/static/images/home/trainings/icons/autocad.svg" alt="" />
+              </div>
+              <div class="text">AutoCAD</div>
+            </a>
+            <a href="internships.ejs" class="card_item" target="_blank" rel="noopener">
+              <div class="img">
+                <img src="https://internshala.com/static/images/home/trainings/icons/creative_writing.svg" alt="" />
+              </div>
+              <div class="text">Creative Writing</div>
+            </a>
+          </div>
+
+          <div class="view_all_cta_container_20_more">&amp; 52 more...</div>
+        </div>
+      </div>
+
+      <!-- Last Div  -->
+
+      <div id="fresher_jobs" class="container-fluid section">
+        <div class="max-width-container">
+          <h2>Fresher Jobs <span class="superscript">New</span></h2>
+          <p class="section_description">
+            Premium fresher jobs on your fingertips
+            <a class="view_all_cta" href="internships.ejs">
+              View all jobs <i class="ic-24-arrow-right"></i>
+            </a>
+          </p>
+
+          <div id="fresher_jobs_container">
+            <div class="fresher_job_perk">
+              <div class="img">
+                <img src="https://internshala.com/static/images/home/jobs/perks/ctc.svg" alt="" />
+              </div>
+              <div class="name">Minimum CTC of 3 LPA</div>
+            </div>
+            <div class="fresher_job_perk">
+              <div class="img">
+                <img src="https://internshala.com/static/images/home/jobs/perks/dream.svg" alt="" />
+              </div>
+              <div class="name">Dream companies</div>
+            </div>
+            <div class="fresher_job_perk">
+              <div class="img">
+                <img src="https://internshala.com/static/images/home/jobs/perks/verified.svg" alt="" />
+              </div>
+              <div class="name">100% verified jobs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------- Footer ------------------ -->
+
+    <div id="footer" class="generic_footer pt-3">
+      <div class="max-width-container">
+        <div class="footer_container">
+
+          <!-- footer coloumn -1  -->
+          <div class="footer_coloumn">
+            <div class="footer_list">
+              <h4>Internships by Stream</h4>
+              <div class="footer_list_item">
+                <a href="#">Computer Science Internship</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="#">Electronics Internship</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="#">Marketing Internship</a>
+              </div>
+            </div>
+          </div>
+          <!-- footer coloumn -2 -->
+          <div class="footer_coloumn">
+            <div class="footer_list">
+              <h4>
+                Online Trainings
+                <span class="orange"> <a href="#">OFFER</a></span>
+              </h4>
+              <div class="footer_list_item">
+                <a href="#">Data Science</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="#">Programming with python</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="#">Digital Marketing</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="#">Web Development</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="#">Machine Learning</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="#">Advance Excel</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="#">Ethical Hacking</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="#">Creative Writing</a>
+              </div>
+            </div>
+          </div>
+          <!-- footer coloumn -3 -->
+          <div class="footer_coloumn">
+            <div class="footer_list">
+              <h4>About WeInterns</h4>
+              <div class="footer_list_item">
+                <a href="#">About Us</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="for_students.ejs">For Students</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="#">For Institutes</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="#">Careers</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="#">Blog</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="#">Our Services</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="#">Terms and Conditions</a>
+              </div>
+              <div class="footer_list_item">
+                <a href="#">Privacy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer bottom -->
+        <br />
+        <div id="footer_bottom">
+          <!-- Android app button -->
+          <!-- <div id="android_app_container" class="footer_list_item">
+            <a href="#">
+              <i class="fab fa-google-play"> <span>Get Android App</span></i>
+            </a>
+          </div> -->
+          <!-- Social media Icons -->
+          <div id="social_media_container">
+            <span>
+              <a href="#"> <i class="fab fa-instagram footer_icons"></i></a>
+              <a href="#"><i class="fab fa-twitter footer_icons"></i></a>
+              <a href="#"><i class="fab fa-youtube footer_icons"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in footer_icons"></i></a>
+            </span>
+          </div>
+
+          <div id="copyright">
+            <span>© Copyright WeInterns</span>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+
+<script src="/static/js/search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

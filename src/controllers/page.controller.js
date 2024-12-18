@@ -30,6 +30,14 @@ router.get("/students_log.ejs", async (req, res) => {
   }
 });
 
+router.get("/for_students.ejs", async (req, res) => {
+  try {
+    return res.render("html/for_students");
+  } catch (err) {
+    return res.render("html/error");
+  }
+});
+
 router.get("/details.ejs", async (req, res) => {
   try {
     // console.log(req.query);

@@ -1,10 +1,10 @@
 function slideshow() {
   let slider = [
-    "/static/images/get_set_intern_2021-1920-5bb08e.png",
-    "/static/images/learn_with_me-1920-5da5b0.png",
+    "/static/images/HomePage1.jpg",
+    "/static/images/HomePage2.jpg",
 
-    "/static/images/social_issue_camapign_jul21-1920-b70cf7.png",
-    "/static/images/year_specific_21-1920-d0c72f.png",
+    "/static/images/HomePage3.jpg",
+    "/static/images/HomePage4.jpg",
   ];
 
   let div = document.getElementById("slider");

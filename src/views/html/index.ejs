@@ -1,73 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script
-      src="https://kit.fontawesome.com/a13b999530.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/static/css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="/static/css/nev_bar_style.css" />
-    <link rel="stylesheet" href="/static/css/mainvishal.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="https://internshala.com//favicon.ico?v=5" />
-    <title>Home</title>
-  </head>
-  <body>
-    <header>
-      <a class="logo" href="#" style="text-align: center;">
-        <img
-          class="logo" style="width: 35%;"
-          src="/static/images/logo_main.png"
-          alt="We Interns"
-        />
-      </a>
-      <nav>
-        <ul class="nav_links">
-          <li>
-            <a href="internships.ejs">Internships</a>
-          </li>
-          <li>
-            <a href="#">Online Training <span id="headOffer">OFFER</span></a>
-          </li>
-          <li>
-            <a href="#">Freshers Job</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="students_log.ejs" id="cta">
-        <button class="headingbutton">Login</button></a
-      >
 
-      <a href="students_reg.ejs" id="cta1">
-        <button class="headingbutton" id="register">Register</button></a
-      >
-    </header>
+<head>
+  <script src="https://kit.fontawesome.com/a13b999530.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/static/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/static/css/nev_bar_style.css" />
+  <!-- <link rel="stylesheet" href="/static/css/mainvishal.css" /> -->
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/static/images/logo_main.png" />
+  <title>Home</title>
+</head>
+
+<body>
+
+  <%- include('header.html') %>
 
     <div id="searchbox">
-      <input
-        id="home_search"
-        type="text"
-        placeholder="What are you looking for?"
-      />
+      <input id="home_search" type="text" placeholder="What are you looking for?" />
       <button id="searchIcon">
         <i class="fa fa-search"></i>
       </button>
     </div>
     <div id="slider">
       <div class="slide">
-        <button id="button1"><</button>
+        <button id="button1">
+          << /button>
       </div>
       <div id="button2" class="slide">
         <button id="btn2">></button>
@@ -77,449 +43,157 @@
     <div id="dot"></div>
     <script src="/static/js/nev_bar.js"></script>
 
-    <!-- Krishna's work ends here -->
+    <div class="container-fluid section">
 
-    <!-- Vishal's work starts here -->
+    </div>
 
-    <div id="internships" class="container-fluid section">
-      <div class="max-width-container">
-        <h2>Internships</h2>
-        <p class="section_description">
-          Apply to 10,000+ internships for free
-          <a class="view_all_cta" href="internships.ejs">
-            View all internships <i class="ic-24-arrow-right"></i>
-          </a>
-        </p>
-        <!-- First Main Div    -->
-        <div class="categories_container">
-          <h4>Popular cities</h4>
-          <!-- Inside the 8 div    -->
-          <div class="categories scrollable_cards">
-            <a
-              class="internship_card card_item home_tile_city"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/work_from_home.svg"
-                />
+    <!-- Feature Start -->
+    <div class="container-xxl py-5 text-center">
+      <h3 class="pb-2">Get ahead with WeInterns</h3>
+
+      <p>"Shape Your Future with Industry-Leading Certification Courses and Internships!"</p>
+      <div class="container">
+        <div class="row g-5">
+          <!-- Feature 1 -->
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
+                <i class="fa fa-search fa-2x text-primary"></i>
               </div>
-              <div class="text">Work from home</div>
-            </a>
-            <a
-              class="internship_card card_item home_tile_city"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/delhi_ncr.svg"
-                />
-              </div>
-              <div class="text">Delhi</div>
-            </a>
-            <a
-              class="internship_card card_item home_tile_city"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/bangalore.svg"
-                />
-              </div>
-              <div class="text">Bangalore</div>
-            </a>
-            <a
-              class="internship_card card_item home_tile_city"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/mumbai.svg"
-                />
-              </div>
-              <div class="text">Mumbai</div>
-            </a>
-            <a
-              class="internship_card card_item home_tile_city"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/hyderabad.svg"
-                />
-              </div>
-              <div class="text">Hyderabad</div>
-            </a>
-            <a
-              class="internship_card card_item home_tile_city"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/chennai.svg"
-                />
-              </div>
-              <div class="text">Chennai</div>
-            </a>
-            <a
-              class="internship_card card_item home_tile_city"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/kolkata.svg"
-                />
-              </div>
-              <div class="text">Kolkata</div>
-            </a>
-            <a
-              class="internship_card card_item home_tile_city"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/international.svg"
-                />
-              </div>
-              <div class="text">International</div>
-            </a>
+              <h1 class="display-1 text-light mb-0">01</h1>
+            </div>
+            <h5>Find Internships</h5>
           </div>
-        </div>
-        <!-- Second Main Div             -->
-        <div class="categories_container">
-          <h4>Popular categories</h4>
-
-          <div class="categories scrollable_cards">
-            <a
-              class="internship_card card_item home_tile_category"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/part_time.svg"
-                />
+          <!-- Feature 2 -->
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
+                <i class="fa fa-laptop-code fa-2x text-primary"></i>
               </div>
-              <div class="text">Part-time</div>
-            </a>
-            <a
-              class="internship_card card_item home_tile_category"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/engineering.svg"
-                />
+              <h1 class="display-1 text-light mb-0">02</h1>
+            </div>
+            <h5>Upgrade Your Skills</h5>
+          </div>
+          <!-- Feature 3 -->
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
+                <i class="fa fa-check-square fa-2x text-primary"></i>
               </div>
-              <div class="text">Engineering</div>
-            </a>
-            <a
-              class="internship_card card_item home_tile_category"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/ngo.svg"
-                />
+              <h1 class="display-1 text-light mb-0">03</h1>
+            </div>
+            <h5>Get Certificate</h5>
+          </div>
+          <!-- Feature 4 -->
+          <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
+                <i class="fa fa-briefcase fa-2x text-primary"></i>
               </div>
-              <div class="text">NGO</div>
-            </a>
-            <a
-              class="internship_card card_item home_tile_category"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/mba.svg"
-                />
-              </div>
-              <div class="text">MBA</div>
-            </a>
-            <a
-              class="internship_card card_item home_tile_category"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/design.svg"
-                />
-              </div>
-              <div class="text">Design</div>
-            </a>
-            <a
-              class="internship_card card_item home_tile_category"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/science.svg"
-                />
-              </div>
-              <div class="text">Science</div>
-            </a>
-            <a
-              class="internship_card card_item home_tile_category"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/media.svg"
-                />
-              </div>
-              <div class="text">Media</div>
-            </a>
-            <a
-              class="internship_card card_item home_tile_category"
-              href="internships.ejs"
-            >
-              <div class="img">
-                <img
-                  alt=""
-                  src="https://internshala.com/static/images/home/internships/categories/humanities.svg"
-                />
-              </div>
-              <div class="text">Humanities</div>
-            </a>
+              <h1 class="display-1 text-light mb-0">04</h1>
+            </div>
+            <h5>Get our Dream Job</h5>
           </div>
         </div>
       </div>
-      <!-- Third Main div -->
-      <!-- In the Third div I have added a link if you click any div then it redirects you to an online Training page -->
-      <div id="trainings" class="container-fluid section">
-        <div class="max-width-container">
-          <h4>Internshala Trainings</h4>
-          <p class="section_description">
-            Learn new-age skills on the go
-            <a
-              class="view_all_cta"
-              target="_blank"
-              rel="noopener"
-              href="internships.ejs"
-            >
-              View all trainings<i class="ic-24-arrow-right"></i>
-            </a>
-          </p>
+    </div>
+    <!-- Feature End -->
 
-          <div id="trainings_container" class="scrollable_cards">
-            <a
-              href="internships.ejs"
-              class="card_item"
-              target="_blank"
-              rel="noopener"
-            >
-              <div class="img">
-                <img
-                  src="https://internshala.com/static/images/home/trainings/icons/programming_with_python.svg"
-                  alt=""
-                />
-              </div>
-              <div class="text">Programming with Python</div>
-            </a>
-            <a
-              href="internships.ejs"
-              class="card_item"
-              target="_blank"
-              rel="noopener"
-            >
-              <div class="img">
-                <img
-                  src="https://internshala.com/static/images/home/trainings/icons/digital_marketing.svg"
-                  alt=""
-                />
-              </div>
-              <div class="text">Digital Marketing</div>
-            </a>
-            <a
-              href="internships.ejs"
-              class="card_item"
-              target="_blank"
-              rel="noopener"
-            >
-              <div class="img">
-                <img
-                  src="https://internshala.com/static/images/home/trainings/icons/web_development.svg"
-                  alt=""
-                />
-              </div>
-              <div class="text">Web Development</div>
-            </a>
-            <a
-              href="internships.ejs"
-              class="card_item"
-              target="_blank"
-              rel="noopener"
-            >
-              <div class="img">
-                <img
-                  src="https://internshala.com/static/images/home/trainings/icons/machine_learning.svg"
-                  alt=""
-                />
-              </div>
-              <div class="text">Machine Learning</div>
-            </a>
-            <a
-              href="internships.ejs"
-              class="card_item"
-              target="_blank"
-              rel="noopener"
-            >
-              <div class="img">
-                <img
-                  src="https://internshala.com/static/images/home/trainings/icons/advanced_excel.svg"
-                  alt=""
-                />
-              </div>
-              <div class="text">Advanced Excel</div>
-            </a>
-            <a
-              href="internships.ejs"
-              class="card_item"
-              target="_blank"
-              rel="noopener"
-            >
-              <div class="img">
-                <img
-                  src="https://internshala.com/static/images/home/trainings/icons/ethical_hacking.svg"
-                  alt=""
-                />
-              </div>
-              <div class="text">Ethical Hacking</div>
-            </a>
-            <a
-              href="internships.ejs"
-              class="card_item"
-              target="_blank"
-              rel="noopener"
-            >
-              <div class="img">
-                <img
-                  src="https://internshala.com/static/images/home/trainings/icons/autocad.svg"
-                  alt=""
-                />
-              </div>
-              <div class="text">AutoCAD</div>
-            </a>
-            <a
-              href="internships.ejs"
-              class="card_item"
-              target="_blank"
-              rel="noopener"
-            >
-              <div class="img">
-                <img
-                  src="https://internshala.com/static/images/home/trainings/icons/creative_writing.svg"
-                  alt=""
-                />
-              </div>
-              <div class="text">Creative Writing</div>
-            </a>
+    <!-- About Start -->
+    <div id="for_students" class="container-fluid bg-light overflow-hidden px-lg-0">
+      <div class="container about px-lg-0">
+        <div class="row g-0 mx-lg-0">
+          <!-- Image Section -->
+          <div class="col-lg-6 ps-lg-0" style="min-height: 300px;">
+            <div class="position-relative h-100">
+              <img class="position-absolute img-fluid h-100" src="/static/images/for_students.avif"
+                style="object-fit: cover;" alt="About IT Company">
+            </div>
           </div>
-
-          <div class="view_all_cta_container_20_more">&amp; 52 more...</div>
-        </div>
-      </div>
-      <!-- Last Div  -->
-
-      <div id="fresher_jobs" class="container-fluid section">
-        <div class="max-width-container">
-          <h2>Fresher Jobs <span class="superscript">New</span></h2>
-          <p class="section_description">
-            Premium fresher jobs on your fingertips
-            <a class="view_all_cta" href="internships.ejs">
-              View all jobs <i class="ic-24-arrow-right"></i>
-            </a>
-          </p>
-
-          <div id="fresher_jobs_container">
-            <div class="fresher_job_perk">
-              <div class="img">
-                <img
-                  src="https://internshala.com/static/images/home/jobs/perks/ctc.svg"
-                  alt=""
-                />
+          <!-- Text Section -->
+          <div class="col-lg-6 about-text wow fadeIn" data-wow-delay="0.5s">
+            <div class="p-lg-5 pe-lg-0">
+              <div class="section-title text-start">
+                <h1 class="display-5 mb-4"><i class="fa fa-graduation-cap theme-color" aria-hidden="true"></i>For
+                  Students</h1>
               </div>
-              <div class="name">Minimum CTC of 3 LPA</div>
-            </div>
-            <div class="fresher_job_perk">
-              <div class="img">
-                <img
-                  src="https://internshala.com/static/images/home/jobs/perks/dream.svg"
-                  alt=""
-                />
-              </div>
-              <div class="name">Dream companies</div>
-            </div>
-            <div class="fresher_job_perk">
-              <div class="img">
-                <img
-                  src="https://internshala.com/static/images/home/jobs/perks/verified.svg"
-                  alt=""
-                />
-              </div>
-              <div class="name">100% verified jobs</div>
+              <h3 class="mb-4">Empower Your Career with Tailored Programs for Students"</h3>
+              <p class="text-justify">Join thousands of students who have kickstarted their careers with our <strong>
+                  expert-guided programs</strong> . Your
+                future starts here!</p>
+              <ul class="text-justify">
+                <li>
+                  Explore certification courses designed to enhance your skills and make you job-ready.
+                </li>
+                <li> Unlock a world of opportunities with <strong>placement guarantee programs</strong> , offering
+                  salaries up to ₹5
+                  LPA.
+                </li>
+                <li>
+                  Choose from a wide range of internships with flexible options like <strong> work-from-home</strong>
+                  and competitive
+                  stipends.
+                </li>
+                <li>
+                  Gain hands-on experience in fields like <strong> software development, gaming, and more</strong> .
+                </li>
+              </ul>
+              <button class="btn btn-tomato">Explore</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- About End -->
 
-    <!-- vishal's work ends here -->
-
-    <!-- ----------------- Footer Starts from here (Srikanth) ------------------------- -->
-
-    <div id="footer" class="generic_footer">
-      <div class="max-width-container">
-        <div class="footer_container">
-          <!-- footer coloumn -1 -->
-
-          <div class="footer_coloumn">
-            <div class="footer_list">
-              <h3>Internships by places</h3>
-              <div class="footer_list_item">
-                <a href="#">Internships in India</a>
+    <!-- why choose us Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+      <div class="container feature px-lg-0">
+        <div class="row g-0 mx-lg-0">
+          <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
+            <div class="p-lg-5 ps-lg-0">
+              <div class="section-title text-start">
+                <h1 class="display-5 mb-4"> <i class="fa fa-university theme-color" aria-hidden="true"></i>
+                  For Institutes</h1>
               </div>
-              <div class="footer_list_item">
-                <a href="#">Internships in Delhi</a>
-              </div>
-              <div class="footer_list_item">
-                <a href="#">Internships in Bangalore</a>
-              </div>
-              <div class="footer_list_item">
-                <a href="#">Internships in Hyderabad</a>
-              </div>
-              <div class="footer_list_item">
-                <a href="#">Internships in Mumbai</a>
-              </div>
-              <div class="footer_list_item">
-                <a href="#">Internships in Chennai</a>
-              </div>
-              <div class="footer_list_item">
-                <a href="#">Internships in Gurgaon</a>
-              </div>
-              <div class="footer_list_item">
-                <a href="#">Internships in Kolkata</a>
-              </div>
+              <h3 class="mb-4">Partner with Us to Shape the Future Workforce</h3>
+              <p class="text-justify">
+                Are you an institute dedicated to nurturing talent? Collaborate with us to bridge the gap between
+                students and real-world opportunities.
+              </p>
+              <ul>
+                <li class="mb-2">Leverage our platform to offer <strong>internships</strong> and industry exposure to
+                  your students, ensuring they gain hands-on experience.</li>
+                <li class="mb-2">Connect with top organizations looking for skilled interns in fields like
+                  <strong>technology, marketing, design, and more</strong>.
+                </li>
+                <li class="mb-2">Enhance your institute's reputation by producing <strong>industry-ready
+                    professionals</strong> and building meaningful partnerships with leading companies.</li>
+                <li>Together, let’s empower the next generation of leaders and innovators.</li>
+              </ul>
             </div>
           </div>
+          <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+            <div class="position-relative h-100">
+              <img class="position-absolute img-fluid h-100" src="/static/images/for_institute.avif"
+                style="object-fit: cover;" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- why choose us End -->
 
-          <!-- footer coloumn -2  -->
+    <!-- ----------------- Footer ------------------------- -->
+
+    <div id="footer" class="generic_footer pt-3">
+      <div class="max-width-container">
+        <div class="footer_container">
+
+          <!-- footer coloumn -1  -->
           <div class="footer_coloumn">
             <div class="footer_list">
-              <h3>Internships by Stream</h3>
+              <h4>Internships by Stream</h4>
               <div class="footer_list_item">
                 <a href="#">Computer Science Internship</a>
               </div>
@@ -527,32 +201,20 @@
                 <a href="#">Electronics Internship</a>
               </div>
               <div class="footer_list_item">
-                <a href="#">Mechanical Internship</a>
-              </div>
-              <div class="footer_list_item">
-                <a href="#">Civil Internship</a>
-              </div>
-              <div class="footer_list_item">
                 <a href="#">Marketing Internship</a>
-              </div>
-              <div class="footer_list_item">
-                <a href="#">Chemical Internship</a>
-              </div>
-              <div class="footer_list_item">
-                <a href="#">Finance Internship</a>
-              </div>
-              <div class="footer_list_item">
-                <a href="#">Summer Research Fellowship</a>
               </div>
             </div>
           </div>
-          <!-- footer coloumn -3 -->
+          <!-- footer coloumn -2 -->
           <div class="footer_coloumn">
             <div class="footer_list">
-              <h3>
+              <h4>
                 Online Trainings
                 <span class="orange"> <a href="#">OFFER</a></span>
-              </h3>
+              </h4>
+              <div class="footer_list_item">
+                <a href="#">Data Science</a>
+              </div>
               <div class="footer_list_item">
                 <a href="#">Programming with python</a>
               </div>
@@ -572,28 +234,25 @@
                 <a href="#">Ethical Hacking</a>
               </div>
               <div class="footer_list_item">
-                <a href="#">Auto CAD</a>
-              </div>
-              <div class="footer_list_item">
                 <a href="#">Creative Writing</a>
               </div>
             </div>
           </div>
-          <!-- footer coloumn -4 -->
+          <!-- footer coloumn -3 -->
           <div class="footer_coloumn">
             <div class="footer_list">
-              <h3>About Internshala</h3>
+              <h4>About WeInterns</h4>
               <div class="footer_list_item">
                 <a href="#">About Us</a>
               </div>
               <div class="footer_list_item">
-                <a href="#">We're hiring</a>
+                <a href="for_students.ejs">For Students</a>
               </div>
               <div class="footer_list_item">
-                <a href="#">Hire Interns for your company</a>
+                <a href="#">For Institutes</a>
               </div>
               <div class="footer_list_item">
-                <a href="#">Team Diary</a>
+                <a href="#">Careers</a>
               </div>
               <div class="footer_list_item">
                 <a href="#">Blog</a>
@@ -615,11 +274,11 @@
         <br />
         <div id="footer_bottom">
           <!-- Android app button -->
-          <div id="android_app_container" class="footer_list_item">
+          <!-- <div id="android_app_container" class="footer_list_item">
             <a href="#">
               <i class="fab fa-google-play"> <span>Get Android App</span></i>
             </a>
-          </div>
+          </div> -->
           <!-- Social media Icons -->
           <div id="social_media_container">
             <span>
@@ -631,12 +290,15 @@
           </div>
 
           <div id="copyright">
-            <span>© Copyright 2021 InternShala</span>
+            <span>© Copyright WeInterns</span>
           </div>
         </div>
       </div>
     </div>
-  </body>
-</html>
+</body>
+
 
 <script src="/static/js/search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

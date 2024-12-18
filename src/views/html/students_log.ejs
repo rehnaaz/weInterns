@@ -1,60 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script
-      src="https://kit.fontawesome.com/a13b999530.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/static/css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="/static/css/nev_bar_style.css" />
-    <link rel="stylesheet" href="/static/css/pop.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="https://internshala.com//favicon.ico?v=5" />
-    <title>Internshala|login</title>
-  </head>
-  <body>
-    <!-- header/nav bar -->
 
-    <header>
-      <a class="logo" href="index.ejs">
-        <img
-          class="logo"
-          src="https://internshala.com/static/images/common/new_internshala_logo.svg"
-          alt="InternShala"
-        />
-      </a>
-      <nav>
-        <ul class="nav_links" id="navigationkkk">
-          <li>
-            <a href="internships.ejs">Internships</a>
-          </li>
-          <li>
-            <a href="#">Online Training <span id="headOffer">OFFER</span></a>
-          </li>
-          <li>
-            <a href="#">Freshers Job</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="students_log.ejs" id="cta">
-        <button class="headingbutton">Login</button></a
-      >
-      <a href="students_reg.ejs" id="cta1">
-        <button class="headingbutton" id="register">Register</button></a
-      >
-    </header>
+<head>
+  <script src="https://kit.fontawesome.com/a13b999530.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/static/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/static/css/nev_bar_style.css" />
+  <link rel="stylesheet" href="/static/css/pop.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://internshala.com//favicon.ico?v=5" />
+  <title>Internshala|login</title>
+</head>
+
+<body>
+  <!-- header/nav bar -->
+
+  <%- include('header.html') %>
+  
     <!--         This is body of Login page        -->
     <div style="margin-top: 30px"></div>
     <div class="max-width-container">
@@ -62,9 +29,7 @@
         <!-- Google login -->
         <div id="google_button_container">
           <div id="google_img_container">
-            <img
-              src="https://internshala.com/static/images/login/google_logo.png"
-            />
+            <img src="https://internshala.com/static/images/login/google_logo.png" />
           </div>
           <div id="google_content"><a href="#">Signup With Google</a></div>
         </div>
@@ -72,23 +37,14 @@
         <!-- Rest of the fields -->
         <div id="form_container">
           <div class="helper">
-            <div id="google_or"><p>OR</p></div>
+            <div id="google_or">
+              <p>OR</p>
+            </div>
           </div>
           <label for="email">Email</label>
-          <input
-            id="email"
-            name="email"
-            placeholder=" John@xyz.com"
-            class="reg_fields"
-          />
+          <input id="email" name="email" placeholder=" John@xyz.com" class="reg_fields" />
           <label for="password">Password</label>
-          <input
-            id="password"
-            name="password"
-            placeholder=" Enter password"
-            class="reg_fields"
-            type="password"
-          />
+          <input id="password" name="password" placeholder=" Enter password" class="reg_fields" type="password" />
 
           <p>
             <span><a href="#">Forgot password ?</a></span>
@@ -254,7 +210,7 @@
           </div>
 
           <div id="copyright">
-            <span>© Copyright 2021 InternShala</span>
+            <span>© Copyright WeInterns</span>
           </div>
         </div>
       </div>
@@ -276,6 +232,7 @@
     </div>
 
     <!--  -->
-  </body>
+</body>
+
 </html>
 <script src="/static/js/students_log.js"></script>
